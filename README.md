@@ -1,8 +1,9 @@
 # FaceComparison
 This respository uses a siamese neural network to compare faces and determine whether the two faces are similar\
-Here is the structure of the neural network:\
+Here is was the initial structure of the neural network:\
 ![Model Structure](https://lh3.googleusercontent.com/90wByqRdAgwjp33v6ojaqcgV-0rbIQ8Au5QnfOtmKdLscvOgeDTClt3nkBJheCAC8x05l6fFt2igfmgnyoKQHmXNd7wT-Yrr7zTrU-YyeIqS8iYsZArtEqxk0-3KHKgORjU5kJZRib1UtEVCtcujCjHeaU0dZLpWrj_0f0O4kO1oxRJsru2PyygBRh-2mMiXslusFuTDDYLSfmBSSiScIHbLc7RVyyy3hj8L6p7W0CQ1xgospzkBV53-F_mmQ4X5f4GqAeYq7Ih0tc6RX3Uo9TGJL1lAzj30SdlQMaxHeaD4zOpy2r0UEROybsVIE2OcUmj2t8C1QF42tCsQDGlNOCKZzzs_Lhzxjl6Dk_Myj00bX2YIa0fWr_F4LyTUOlZLULSQjCx5kuf29Vr5pGIDng6XOz3eqv_tFev4vrAJnJsCO_ikp0sqfndqEdFlLJBEB7gkox6Z2NWDCtMfgrI-PB7f_RThQxNrHVtHnfcXBcDKirG3ljhIbEGwSeouW2k-T09HbpFxO8zC_9yprBDIZkSkexxqlf2DXhN2H5OcYqNdPimTePhga0nqeLUrdjsLM1hYT99VrLjwL4HVwQpDHVoTDgu-9utDuiB-THln1mVcqKv3LfLLgTAdhhbcYnlHrgv-P7XQtyIiHuGrKDC2jlowIlARs4VGADfQCiAcbmbYon975tcxnD_nrcigBQ=w1000-h500-no?authuser=0)
-It is important to note that both images are fed into the same model to produce an encoding
+I have made a couple changes with data augmentation, kernels, and layers, so this is a bit outdated\
+It is important to note that both images are fed into the same model to produce an encoding\
 
 # Progress Log
 Noticed that the loss and accuracy seemed to jump around\
