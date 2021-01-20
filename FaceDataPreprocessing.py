@@ -83,7 +83,7 @@ def init(num_data=15000, guaranteed_true=None, repeats=False, filters=[], params
     def get_random(index) -> np.array([]):  # gets a random array of pixel_data from an index
         return data[index][random.randrange(len(data[index]))]
 
-    for _ in range(num_data - guaranteed_true):
+    for _ in range(num_data - guaranteed_true): # randomly selects two images
         pick_1 = random.randrange(len(data))
         pick_2 = random.randrange(len(data))
         not_same = int(not pick_1 == pick_2)
@@ -92,13 +92,13 @@ def init(num_data=15000, guaranteed_true=None, repeats=False, filters=[], params
         in_2.append(get_random(pick_2))
         out_y.append(not_same)
 
-    for _ in range(guaranteed_true):
+    for _ in range(guaranteed_true): # adds two faces that are guaranteed to be the same person
         pick = random.randrange(len(data))
         in_1.append(get_random(pick))
         in_2.append(get_random(pick))
         out_y.append(0)
 
-    if not repeats:
+    if not repeats: # removes repeated items in array
         seen = {}
         for i, (arr_1, arr_2) in enumerate(zip(in_1, in_2)):
             hashed = hash(str(np.concatenate((arr_1, arr_2), axis=0).data))
